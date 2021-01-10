@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAE5C5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/re_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="昵称"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/re_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/re_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="再次输入"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="手机号码"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/re_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="年龄"
+        android:inputType="number"
+        android:maxLines="1" />
+
+
+    <Spinner
+        android:id="@+id/re_sex"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <Spinner
+        android:id="@+id/re_university"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <Button
+        android:id="@+id/re_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/re_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_log_out"
+        android:text="取消" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ResetActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:text="我们将会发送一个短信验证码以验证你的身份，请在下方输入你的账号。"/>
+
+    <EditText
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/tips"
+        android:text="我们本打算发送验证码到您的手机上，但很不幸我们只有15条短信，所以通过你预留的手机号进行验证。"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你预留的手机号"
+        android:inputType="phone"
+        android:id="@+id/verificationCode"/>
+
+    <Button
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yes"
+        android:background="@drawable/shape_rectangle"
+        android:text="确定"/>
+
+</LinearLayout>

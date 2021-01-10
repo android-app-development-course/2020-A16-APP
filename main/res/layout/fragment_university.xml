@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.UniversityFragment"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.xxx.justice.java.VerticalTabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#EDEDED"
+                android:visibility="visible"
+                app:indicator_color="@color/colorAccent"
+                app:indicator_gravity="fill"
+                app:tab_height="50dp"
+                app:tab_mode="scrollable" />
+
+            <com.xxx.justice.java.VerticalViewPager
+                android:id="@+id/verticalviewpager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/toEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle"
+            android:text="发表帖子" />
+    </LinearLayout>
+</FrameLayout>
